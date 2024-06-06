@@ -21,8 +21,7 @@ export const getColorByName = async (req, res) => {
 
 export const editColor = async (req, res) => {
   try {
-    const { id } = req.params;
-    const { name, hex, rgb } = req.body;
+    const { id, name, hex, rgb } = req.body;
 
     let response = await Color.findByIdAndUpdate(id, { name, hex, rgb });
 

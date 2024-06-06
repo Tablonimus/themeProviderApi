@@ -8,6 +8,6 @@ router.get("/", searchColors);
 router.post("/", createColor);
 
 router.get("/:name", getColorByName);
-router.put("/:id", editColor);
+router.put("/", editColor);
 
 export default router;
