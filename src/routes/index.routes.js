@@ -1,7 +1,7 @@
-
 import colorsRoutes from "./colors.routes.js";
+import imagesRoutes from "./images.routes.js";
 
-import { Router } from "express"
+import { Router } from "express";
 const app = Router();
 
 // Configurar los routers
@@ -10,8 +10,7 @@ app.get("/", (req, res) => {
   res.send("GET de prueba / sola con deploy");
 });
 
-
 app.use("/colors", colorsRoutes);
+app.use("/images", imagesRoutes);
 
-export default app
-
+export default app;

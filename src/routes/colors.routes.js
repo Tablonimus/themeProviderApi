@@ -1,6 +1,10 @@
-//import { authRequired } from "../middlewares/validateToken.js";
 import { Router } from "express";
-import { searchColors, getColorByName, createColor, editColor } from "../controllers/colors.controller.js";
+import {
+  searchColors,
+  getColorByName,
+  createColor,
+  editColor,
+} from "../controllers/colors.controller.js";
 
 const router = Router();
 

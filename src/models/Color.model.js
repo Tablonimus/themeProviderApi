@@ -8,7 +8,10 @@ const colorSchema = new mongoose.Schema({
   hex: {
     type: String,
   },
-  rgb: {
+  displayName: {
+    type: String,
+  },
+  category: {
     type: String,
   },
 });
